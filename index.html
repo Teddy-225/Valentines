@@ -15,9 +15,11 @@
         color: white;
         font-family: 'Comic Sans MS', cursive, sans-serif;
         text-align: center;
+        flex-direction: column;
     }
     .message {
         animation: fadeIn 2s ease-in-out;
+        margin-bottom: 30px;
     }
     @keyframes fadeIn {
         from { opacity: 0; }
@@ -33,6 +35,17 @@
         50% { transform: scale(1.3); }
         100% { transform: scale(1); }
     }
+    .girl {
+        width: 150px;
+        height: 200px;
+        background: url('https://cdn.pixabay.com/photo/2021/02/14/13/59/girl-6011924_960_720.png') no-repeat center/contain;
+        animation: waveFlowers 3s infinite;
+    }
+    @keyframes waveFlowers {
+        0% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0); }
+    }
   </style>
 </head>
 <body>
@@ -41,5 +54,6 @@
   <h1>Happy Valentine's Day, My Love! 💖</h1>
   <p>You make every day special. Here's to us! 🥰</p>
 </div>
+<div class="girl"></div>
 </body>
 </html>
