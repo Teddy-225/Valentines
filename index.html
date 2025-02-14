@@ -23,6 +23,7 @@
         text-shadow: 2px 2px #ff69b4;
         z-index: 2;
         animation: fadeIn 2s ease-in-out;
+        padding: 0 1rem;
     }
     @keyframes fadeIn {
         from { opacity: 0; }
@@ -90,18 +91,18 @@
     .tree {
         position: absolute;
         bottom: 25vh;
-        width: 15px;
-        height: 80px;
+        width: 6px;
+        height: 60px;
         background: brown;
         border-radius: 2px;
     }
     .tree::after {
         content: '';
         position: absolute;
-        top: -60px;
+        top: -50px;
         left: -10px;
-        width: 40px;
-        height: 80px;
+        width: 30px;
+        height: 60px;
         background: green;
         border-radius: 50%;
         box-shadow: -10px 0 green, 10px 0 green;
@@ -111,14 +112,14 @@
         bottom: 30vh;
         left: 50%;
         transform: translateX(-50%);
-        width: clamp(200px, 50vw, 300px);
-        height: clamp(200px, 50vw, 300px);
+        width: clamp(150px, 60vw, 300px);
+        height: clamp(150px, 60vw, 300px);
         z-index: 3;
     }
   </style>
 </head>
 <body>
-<div class="message">💖 Happy Valentine's Day, Angel!! 💖</div>
+<div class="message">💖 Happy Valentine's Day, Angel! 🌸🌹💐</div>
 <div class="heart">❤️</div>
 <div class="balloon" style="left: 20%; animation-delay: 1s;"></div>
 <div class="balloon" style="left: 50%; animation-delay: 3s;"></div>
